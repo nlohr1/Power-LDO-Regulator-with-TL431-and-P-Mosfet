@@ -2,7 +2,8 @@
 Power-LDO to regulate voltages above +5V protecting USB-connectors from incoming overvoltages.
 
 This Layout adds a simple way to eliminate dangerous incoming Over-Voltages on USB (above 5,25V) coming f.ex. from
-odd Power-Supplies which don't acomplish the USB-specifications (but often are usable and cheap enough to be used as 5V-Supply)
+odd Power-Supplies which don't acomplish the USB-specifications (but often are usable and cheap enough to be used as 5V-Supply).
+
 Usually generic LDO-chips can output between 100 mAmp upto 1 Ampére. But what if you have a Power-Supply which can supply 4 or
 more Amps but the voltage is too high for savely connect to the USB-Power-Input? (f.ex. on the new Raspberry Pi 4).
 So here you can go with a small Layout, whith a board needing only few space with 20 x 9 mm and can provide more than 4A –
