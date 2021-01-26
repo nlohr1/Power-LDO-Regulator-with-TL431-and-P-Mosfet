@@ -1,5 +1,5 @@
 # Power-LDO-Regulator with TL431 and P-Mosfet
-Power-LDO to regulate voltages above +5V protecting overvoltages going into USB-connectors
+Power-LDO to regulate voltages above +5V protecting USB-connectors from incoming overvoltages.
 
 This Layout adds a simple way to eliminate dangerous incoming Over-Voltages on USB (above 5,25V) coming f.ex. from
 odd Power-Supplies which don't acomplish the USB-specifications (but often are usable and cheap enough to be used as 5V-Supply)
