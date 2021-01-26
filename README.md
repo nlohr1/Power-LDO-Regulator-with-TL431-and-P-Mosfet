@@ -6,14 +6,17 @@ odd Power-Supplies which don't acomplish the USB-specifications (but often are u
 
 Usually generic LDO-chips can output between 100 mAmp upto 1 Ampére. But what if you have a Power-Supply which can supply 4 or
 more Amps but the voltage is too high for savely connect to the USB-Power-Input? (f.ex. on the new Raspberry Pi 4).
-So here you can go with a small Layout, whith a board needing only few space with 20 x 9 mm and can provide more than 4A –
-with a Heat-Sink upto 10A or more...
+Most of commercial (Power-)LDO's need more than 3 Volts to be able to regulate the Output reliably. So the old LM7805 or even
+the commonly used LM317(adj). And other mainly used chips as the AMS1117 normally only can provide upto 800mA. In most cases
+this is sufficient power. But if you have a Power-Supply with an Output of (f.ex.) 5,5V and need to have an USB-Input with
+a greater Power than 3 Amps: Then you can go with this a small Layout, the board needing only few space (20 x 9 mm) and can
+provide upto 4A – and with a Heat-Sink more than 10A...
 
 Provided files here with 2 alternative solutions:
 - first solution with a TL431-Shunt-Regulator + OPAmp and a *Power-P-Mosfet*,
-- second solution with same TL431 + OPAmp but with a Power-*N-Mosfet*, due to this Mosfets generally have fewer resistance
+- second solution with same TL431 + OPAmp but with a *Power-N-Mosfet*, due to this Mosfets generally have fewer resistance
   (=more "power"), are cheaper and there are more available types (of N-Mosfets) on the market.
 
-A caveat from this second solution is that it has only a common +5V line but no common ground with the Main-Supply. But
-in most cases this is no problem for the End-Load, bec. the providing 5V-Supplies normally are built with an isolated topology,
-so GND may be seen here as the negative 5V-difference from the common +5V line.
+A caveat from this second solution is that it has only a common +5V line but no common ground with the Main-Supply. But 
+on the other side this is no problem for the End-Load, bec. the providing 5V-Supplies normally are isolated-topologies, so
+"GND" of the Destination-Load may be seen here simply as the negative 5V-difference from our common +5V line.
