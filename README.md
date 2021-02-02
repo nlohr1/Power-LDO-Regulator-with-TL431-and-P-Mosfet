@@ -17,6 +17,6 @@ Provided files here with 2 alternative solutions:
 - second solution with same TL431 + OPAmp but with a *Power-N-Mosfet*, due to this Mosfets generally have fewer resistance
   (=more "power"), are cheaper and there are more available types (of N-Mosfets) on the market.
 
-A caveat from this second solution is that it has only a common +5V line but no common ground with the Main-Supply. But 
-on the other side this is no problem for the End-Load, bec. the providing 5V-Supplies normally are isolated-topologies, so
-"GND" of the Destination-Load may be seen here simply as the negative 5V-difference from our common +5V line.
+A caveat from this second solution is that it has only a common +5V line between Input and Output but no common ground with the Main-Supply.
+But on the other side this is mostly no problem for the End-Load, because the providing 5V-Main-Supplies normally are isolated-topologies,
+so "GND" of the Destination-Load may be seen here simply as 5V-difference from our common +5V line.
