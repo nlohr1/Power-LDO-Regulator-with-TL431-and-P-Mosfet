@@ -9,7 +9,7 @@ more Amps but the voltage is too high for savely connect to the USB-Power-Input?
 Most of commercial (Power-)LDO's need more than 3 Volts to be able to regulate the Output reliably. So the old LM7805 or even
 the commonly used LM317(adj). And other mainly used chips as the AMS1117 normally only can provide upto 800mA. In most cases
 this is sufficient power. But if you have a Power-Supply with an Output of (f.ex.) 5,5V and need to have an USB-Input with
-a greater Power than 3 Amps: Then you can go with this small layout, the board needing only few space (20 x 9 mm) and can
+a greater Power than 3 Amps, then you can go with this small layout, the board needing only few space (20 x 9 mm) and can
 provide more than 4A – with a Heat-Sink and a more powerful Power-Mosfet even more than 10A...
 
 Provided files here with 2 alternative solutions:
